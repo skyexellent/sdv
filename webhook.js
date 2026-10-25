@@ -2,7 +2,7 @@ export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(200).send("ok");
 
   // Проверка, что запрос пришёл именно от Telegram
-  if (req.headers["x-telegram-bot-api-secret-token"] !== process.env.WEBHOOK_SECRET) {
+  if (req.headers["8691648187:AAF7J2IxR2DBl1rQORiZAZpt89HYVj0KQ9I"] !== process.env.WEBHOOK_SECRET) {
     return res.status(401).end();
   }
 
